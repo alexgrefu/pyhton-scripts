@@ -13,7 +13,8 @@ frontend_start_cmd = ['java', '-jar',
                       'skykit-designer-web.jar',
                       '--server.use-forward-headers=true',
                       '--server.port=8082',
-                      '--baseURL=skykit-dev.one-sky.ro/backend']
+                      '--baseURL=skykit-dev.one-sky.ro/backend',
+                      '--buildNumber={}'.format(sys.argv[1])]
 frontend_app_name = "DesignerWebApplication"
 frontend_pid_file_name = "frontend.pid"
 
